@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Comissions | William Choi-Kim</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="icon" href="">
+</head>
+<body>
+	<div class="form">
+		<h1>Commissions</h1>
+		<div class="quote">
+			<fieldset>
+				<legend>Website Type</legend>
+			  
+				<div>
+				  <input type="radio" id="pp" value="1" name="website" />
+				  <label for="pp"><span></span>Personal Portfolio</label>
+				</div>
+			  
+				<div>
+				  <input type="radio" id="cs" name="website" value="2" />
+				  <label for="cs"><span></span>Company Site</label>
+				</div>
+			  
+				<div>
+				  <input type="radio" id="pb" name="website" value="3" />
+				  <label for="pb"><span></span>Personal Blog</label>
+				</div>
+		
+				<div>
+					<input type="radio" id="cb" name="website" value="4" />
+					<label for="cb"><span></span>Company Blog</label>
+				  </div>
+			  </fieldset>
+			  <fieldset>
+				<legend>Domain Type</legend>
+			  
+				<div>
+					<input type="radio" id="sub" value="1" name="domain" checked/>
+					<label for="sub"><span></span>Subdomain (company.github.io)</label>
+				</div>
+
+				<div>
+				  <input type="radio" id="cust" value="2" name="domain" />
+				  <label for="cust"><span></span>Custom Domain (www.company.com)</label>
+				</div>
+			  </fieldset>
+			  <fieldset>
+				<legend>Support</legend>
+			  
+				<div>
+					<input type="radio" id="no" name="support" value="1" />
+					<label for="no"><span></span>No Support</label>
+				  </div>
+
+				<div>
+				  <input type="radio" id="bas" name="support" value="2" />
+				  <label for="bas"><span></span>Basic Support (Maintenance)</label>
+				</div>
+		
+				<div>
+					<input type="radio" id="lim" name="support" value="3" />
+					<label for="lim"><span></span>Limited Support (+ Content Updates)</label>
+				</div>
+		
+				<div>
+					<input type="radio" id="ful" name="support" value="4" />
+					<label for="ful"><span></span>Full Support (+ Design Updates)</label>
+				</div>
+			  </fieldset>
+			  <fieldset>
+				<legend>Turnover Time</legend>
+			  
+				<div>
+				  <input type="radio" id="tBas" name="turnover" value="1" />
+				  <label for="tBas"><span></span>Basic</label>
+				</div>
+		
+				<div>
+					<input type="radio" id="tExp" name="turnover" value="2" />
+					<label for="tExp"><span></span>Express</label>
+				</div>
+		
+				<div>
+					<input type="radio" id="tLim" name="turnover" value="3" />
+					<label for="tLim"><span></span>Limited</label>
+				</div>
+			  </fieldset>
+		</div>
+		<p class="result" id="result">~ $0.00 one-time + $0.00/year</p>
+		<small>*This price is an estimate. Pricing is not guaranteed.</small>
+		<small>** Yearly costs are for maintenance, server, and domain costs. If you stop paying yearly costs, you will have to maintain your website and pay related fees yourself.</small>
+		<button onclick="contact()">Contact</button>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>

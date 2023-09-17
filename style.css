@@ -1,0 +1,111 @@
+@font-face {
+	font-family: "Coolvetica";
+	src: url("coolvetica\ rg.otf");
+  }
+
+body {
+	font-family: Coolvetica;
+	background-color: black;
+	color: white;
+}
+
+fieldset {
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+legend {
+	background-color: white;
+	color: black;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label {
+    color:#f2f2f2;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+
+input[type="radio"] + label span {
+    display:inline-block;
+    width:15px;
+    height:15px;
+	margin: 5px 10px 5px 5px;
+    vertical-align:middle;
+    background:transparent;
+	border: solid;
+	border-radius: 100%;
+    cursor:pointer;
+	transition: 0.2s;
+}
+
+input[type="radio"]:checked + label span {
+    background:white;
+}
+
+h1 {
+	font-size: 8vmin;
+	margin: 0;
+	flex: 1;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	padding: 100px;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.quote {
+	margin-top: 30px;
+}
+@media (orientation:landscape) {
+	.quote {
+		overflow-y: scroll;
+		background-color: rgba(255, 255, 255, 0.1);
+		border-radius: 10px;
+		padding: 30px;
+		flex: 1;
+	}
+
+	.form {
+		max-height: 100%;
+	}
+}
+
+.result {
+	font-size:5vmin;
+}
+
+button {
+	background-color: white;
+	border-radius: 10px;
+	width: fit-content;
+	border: none;
+	color: black;
+	text-align: left;
+	padding: 10px;
+	margin: 30px 0 0 0;
+	font-size: 30px;
+	font-family: Coolvetica;
+	rotate: 0deg;
+	transition: 0.2s;
+}
+button:hover {
+	rotate: 15deg;
+	background-color: black;
+	color: white;
+}
+button:active {
+	rotate: -15deg;
+	background-color: white;
+	color: black;
+}
