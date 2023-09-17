@@ -109,3 +109,10 @@ button:active {
 	background-color: white;
 	color: black;
 }
+
+a {
+	color:white;
+}
+a:hover {
+	font-style: italic;
+}
