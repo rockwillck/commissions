@@ -68,14 +68,6 @@ h1 {
 	margin-top: 30px;
 }
 @media (orientation:landscape) {
-	.quote {
-		overflow-y: scroll;
-		background-color: rgba(255, 255, 255, 0.1);
-		border-radius: 10px;
-		padding: 30px;
-		flex: 1;
-	}
-
 	.form {
 		max-height: 100%;
 	}
